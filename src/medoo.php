@@ -10,27 +10,29 @@
 class medoo
 {
 	// General
-	protected $database_type;
-
-	protected $charset;
-
-	protected $database_name;
+	protected $database_type = 'mysql';
 
 	// For MySQL, MariaDB, MSSQL, Sybase, PostgreSQL, Oracle
-	protected $server;
+	protected $server = '';
 
-	protected $username;
+	protected $username = 'root';
 
-	protected $password;
+	protected $password = '';
 
 	// For SQLite
-	protected $database_file;
+	protected $database_file = '';
+
+	// Optional
+	protected $port = '';
+
+	protected $charset = 'utf8';
+
+	protected $database_name = 'roboteye';
 
 	// For MySQL or MariaDB with unix_socket
 	protected $socket;
 
 	// Optional
-	protected $port;
 
 	protected $option = array();
 

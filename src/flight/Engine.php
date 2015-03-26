@@ -382,7 +382,7 @@ class Engine {
         $this->response(false)
             ->status(404)
             ->write(
-                '<h1>404 Not Found</h1>'.
+                '<h1>404 Not Found </h1>'.
                 '<h3>The page you have requested could not be found.</h3>'.
                 str_repeat(' ', 512)
             )
